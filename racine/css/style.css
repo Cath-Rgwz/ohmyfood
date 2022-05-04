@@ -11,7 +11,7 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
 }
-
+/* part 1 - TITRE */
 header {
   font-family: "Shrikhand", sans-serif;
   text-align: center;
@@ -19,33 +19,45 @@ header {
   padding: 0.3rem;
   position: relative;
 }
-
+h1 {
+  margin: 0.1rem 0;
+  font-size: 1.5rem;
+}
 main {
   padding: 0 1rem;
 }
 
-main .localisation {
+
+/* part 2 - LOCALISATION */
+.localisation {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.2rem 0;
+  /* margin-bottom: 0rem; */
 }
+.localisation h2,
+.localisation i
+{
+  font-size: 0.9rem;
+  font-weight: 590;
+  letter-spacing: -0.02rem;
+  }
 
-main .localisation i {
-  font-size: 1.5rem;
-}
+/* part 3 - SUGGESTION */
 
-/* SUGGESTION */
 .suggestion {
   text-align: center;
+  background-color: #edf0f0;
+  margin-top: -1.1rem;
 }
 
 .suggestion h2 {
-  margin-top: 2rem;
-  font-size: 1.7rem;
+  padding-top: 2rem;
+  font-size: 1.3rem;
 }
 
 .suggestion p {
@@ -54,15 +66,16 @@ main .localisation i {
 
 .suggestion button {
   color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
+  font-weight: 540;
+  font-size: 1.3rem;
+  padding: 1rem 1.1rem;
   border: none;
   border-radius: 2rem;
   background-image: linear-gradient(#ff79da, #9356dc);
   box-shadow: 4px 2px 20px 3px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
-  margin-top: 2rem;
+  margin: 1rem 0 3rem 0;
+  font-size: 1rem;
 }
 
 .suggestion button:hover {
@@ -70,9 +83,17 @@ main .localisation i {
   opacity: 0.8;
 }
 
+/* part 4 - FONCTIONNEMENT */
+
+.fontionnement {
+  padding: 0 2rem;
+}
+
 .fonctionnement h2 {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+  margin-left: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .fonctionnement ol {
@@ -85,12 +106,12 @@ main .localisation i {
 
 .fonctionnement li {
   position: relative;
-  background-color: #f6f6f6;
+  background-color: #edf0f0;
   padding: 1.5rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: 4px 2px 20px 3px rgba(0, 0, 0, 0.2);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 li::before {
@@ -101,6 +122,7 @@ li::before {
   padding: 0.1rem;
   border-radius: 50%;
   color: white;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,19 +133,25 @@ li::before {
 }
 
 .fonctionnement li:hover {
-  transform: scale(1.02);
+  background-color: #4e139832
 }
 
 .fonctionnement li i {
   margin-right: 1rem;
 }
 
+
+/* part 5 - RESTAURANTS */
+
 .restaurant {
   background-color: #f6f6f6;
+  padding: 0.5rem 1rem 2rem;
 }
 
-h3 {
-  padding-top: 1rem;
+.carte__description h3 {
+  padding-top: 0.6rem;
+  font-size: 1rem;
+  margin: 0rem 0.5rem;
 }
 
 a {
@@ -131,15 +159,16 @@ a {
   color: black;
 }
 
-p {
+.carte__description p {
   margin: 0.5rem;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
 }
 
 .restaurant h2 {
-  margin-top: 4rem;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
 }
 
 .restaurant .restaurant__carte {
@@ -203,11 +232,12 @@ p {
 .carte__description {
   position: relative;
   background-color: white;
+  border-radius: 0 0 1rem 1rem;
 }
 
 .restaurant .carte i {
   position: absolute;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   right: 1rem;
   top: 30%;
 }
@@ -218,7 +248,7 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .carte__description .fa-solid:active {
@@ -226,17 +256,27 @@ p {
   transform: translateY(-50%), scale(1.3);
 }
 
+
+/* part 6 - FOOTER */
+
 footer {
   background-color: #353535;
   color: white;
-  padding: 0 2rem;
-  height: 15rem;
+  padding: 0 0 2rem 1rem;
+  margin: -0.6rem 1rem 0 1rem;
+  
 }
 
 footer h2 {
   font-family: "Shrikhand", "sans-serif";
-  font-weight: 500;
-  padding: 1.5rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1.5rem 0.5rem 0;
+}
+
+footer p {
+  margin: 0.3rem;
+  font-size: 0.9rem;
 }
 
 .espace {
@@ -249,65 +289,164 @@ footer h2 {
 
 .contact {
   color: white;
-}
-
-.contact a {
   padding-bottom: 2rem;
 }
 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
 /* PAGE 1 - PALETTE DU GOUT */
-.titre-page-1 {
-  font-family: "Shrikhand", sans-serif;
-  background-color: lightgray;
-}
 
-.image-page-1 {
-  width: 100%;
-  height: 35vh;
-  object-fit: cover;
-  object-position: center bottom;
-}
 
-.menus-grilles {
-  background-color: #e8e4e3;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 0 1rem;
-}
-
-.menus__entrées,
-.menus__plats,
-.menus__desserts {
+.liste-nav {
+  width: 100;
+  height: 2rem;
   background-color: white;
+  list-style-type: none;
+}
+
+.item-nav:nth-child(1) {
+float: left;
+padding-top: 0.5rem;
+}
+
+.item-nav:nth-child(2) {
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
+
+}
+
+.bannière img {
+  width: 100%;
+  height: 42vh;
+  object-fit: cover;
+  object-position: bottom; 
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  background-color: #f5f5ef;
+  
+}
+.menu {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  position: relative; 
+}
+
+.carte-descript {
+  padding: 0.3rem 2rem 0 1rem;
+  position: relative;
+  
+}
+
+.menu__title {
+  font-family: "Shrikhand", sans-serif;
+  }
+
+.carte-descript i  {
+  position: absolute;
+  right: 1rem;
+  top: 45%;
+  font-size: 1.5rem;
+}
+  
+.carte-descript .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.carte-descript .fa-solid:active {
+  opacity: 1;
+  transform: translateY(-50%), scale(1.2);
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.menus {
+  background-color: #e59113;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.menus__entrées {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
 }
 
 .menu-item {
-  border: 1px solid #9356dc;
-  gap: 1rem;
+  display: flex; 
+  background-color: white;
   border-radius: 1rem;
-  display: flex;
+  overflow: hidden;
+  box-shadow: 0px 6px 4px 1px rgb(0 0 0 / 20%);
+  
 }
+.menu-item:hover .menu-item__validation {
+margin-right: 0;
+}
+/* .menu-item__description {
+  
+} */
 
-.menu-item > h4 {
-  margin: 0.4rem;
-}
 
 .menu-item__prix {
   margin-left: auto;
-  font-weight: 900;
+  font-weight: bold;
+  border: 1px solid green;
+  display: flex;
+  align-items: flex-end;
+  
+  
 }
 
-.menu-item__description > h4 {
-  font-size: 1rem;
-  margin: 0.3rem;
-  margin-left: 1rem;
+
+
+.menu-item__description h4,
+.menu-item__description p {
+  padding: 0.1rem;
+  margin: 0.1rem;
 }
 
-.menu-item__description > p {
-  font-size: smaller;
-  margin: 0.3rem;
-  margin-left: 1rem;
+
+.menu-item__validation {
+  background-color: #99e2d0;
+  margin-right: -3rem;
+  width: 3rem;
+  /* transition: all .6s; */
+  display: grid;
+  place-items: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+
+
+.menu-item__validation:hover {
+  margin-right: 0;
+}
+
+.menu-item__validation i {
+  color: white;
+}
+
+
+
+@keyframes circle-check {
+  0% {
+    transform: rotate(-300deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
