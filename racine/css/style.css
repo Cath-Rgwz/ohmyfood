@@ -24,9 +24,9 @@ h1 {
   margin: 0.1rem 0;
   font-size: 1.5rem;
 }
-main {
+/* main {
   padding: 0 1rem;
-}
+} */
 
 
 /* part 2 - LOCALISATION */
@@ -87,7 +87,17 @@ main {
 /* part 4 - FONCTIONNEMENT */
 
 .fontionnement {
+  display: flex;
+  flex-direction: column;
   padding: 0 2rem;
+  width: 95%;
+  /* margin: auto; */
+}
+
+.fonctionnement ol {
+  width: 90%;
+  margin: auto;
+  padding-left: 1rem;
 }
 
 .fonctionnement h2 {
@@ -278,7 +288,7 @@ footer h2 {
 }
 
 footer p {
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
   font-size: 0.9rem;
 }
 
@@ -382,12 +392,15 @@ footer p {
   background-color: #f5f5ef;
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: auto;
 }
 
 .menus__catégories {
   display: flex;
   flex-direction: column;
   gap: 2rem; 
+  
 }
 
 .menus__liste {
@@ -504,7 +517,7 @@ margin-right: 0;
   box-shadow: 5px -3px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
-.box-animation {
+/* .box-animation {
   opacity: 0;
 }
 
@@ -539,6 +552,6 @@ margin-right: 0;
 100% {
   opacity: 1;
 }
-}
+} */
 
 
