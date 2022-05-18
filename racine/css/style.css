@@ -314,16 +314,14 @@ footer p {
   padding: 0;
 }
 
-.liste-nav {
+header {
   width: 100%;
   background-color: white;
   list-style-type: none;
   display: flex;
   align-items: center;
   
-
 }
-
 
 .logo-titre {
   font-family: "Shrikhand", sans-serif;
