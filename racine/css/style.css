@@ -15,15 +15,19 @@ body {
 /* part 1 - TITRE */
 header {
   font-family: "Shrikhand", sans-serif;
-  text-align: center;
+  
   box-shadow: 4px 2px 20px 3px rgba(0, 0, 0, 0.2);
   padding: 0.3rem;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
-h1 {
+
+
+.page-de-garde {
   margin: 0.1rem 0;
-  font-size: 1.5rem;
+  
 }
+
 /* main {
   padding: 0 1rem;
 } */
@@ -37,7 +41,7 @@ h1 {
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem 0;
   
 }
 .localisation h2,
@@ -320,12 +324,21 @@ header {
   list-style-type: none;
   display: flex;
   align-items: center;
+  position: relative;
   
 }
+header i {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+}
+
+
+
 
 .logo-titre {
   font-family: "Shrikhand", sans-serif;
-  margin-left: 6rem;
+  
 
 }
 
