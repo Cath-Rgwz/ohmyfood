@@ -422,15 +422,17 @@ header i {
   font-weight: 400;
   padding-bottom:.5rem ;
   margin-top: .5rem;
+  margin-bottom: 1rem;
 }
 
 .entrées {
 margin-bottom: 1rem;
-
 }
-.desserts,
-.plats {
-  margin-bottom: -1rem;
+
+
+
+.desserts {
+  margin-bottom: 1rem;
 }
 
 
@@ -516,7 +518,7 @@ margin-right: 0;
 .habillage-btn-commander {
   display: flex;
   justify-content: center;
-  padding: 1rem 0 4rem 0;
+  padding: 2.5rem 0 4rem 0;
 }
 
 .btn-commander {
@@ -530,28 +532,40 @@ margin-right: 0;
   box-shadow: 5px -3px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* .box-animation {
+
+/* ANIMATION : BOITE L UNE APRES L AUTRE */
+
+.boite {
   opacity: 0;
 }
 
-.box-1 {
+.boite-1 {
+  /* background-color: #62c214; */
   animation-name: fade-menu;
-  animation-duration: 1s;
-  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
-.box-2 {
+
+.boite-2 {
+  /* background-color: chocolate; */
+  margin-top: 3rem;
+  padding-top: .5rem;
   animation-name: fade-menu;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
-.box-3 {
+
+.boite-3 {
+  /* background-color: deepskyblue; */
+  margin-top: 3rem;
   animation-name: fade-menu;
-  animation-duration: 1s;
+  animation-duration: 4s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
+
 
 @keyframes fade-menu {
   0% {
@@ -565,6 +579,6 @@ margin-right: 0;
 100% {
   opacity: 1;
 }
-} */
+} 
 
 
