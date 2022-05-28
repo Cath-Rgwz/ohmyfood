@@ -12,6 +12,49 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
 }
+
+/* SPIN LOADER */
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background: #edf0f0;
+  height: 100vh;
+  
+  inset: 0;
+  z-index: 1;
+  animation: clear 150ms 2s forwards;
+}
+
+@keyframes clear {
+  0% {
+    opacity: 1
+  }
+    
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader::after {
+content: "";
+height: 60px;
+width: 60px;
+border-radius: 50%;
+border: 6px inset rgba(205, 29, 221, 0.313);
+animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+ to {
+   transform: rotate(360deg);
+ }
+}
+
+
+
+
+
 /* part 1 - TITRE */
 header {
   font-family: "Shrikhand", sans-serif;
@@ -28,9 +71,6 @@ header {
   
 }
 
-/* main {
-  padding: 0 1rem;
-} */
 
 
 /* part 2 - LOCALISATION */
@@ -61,12 +101,13 @@ header {
 }
 
 .suggestion h2 {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   font-size: 1.3rem;
 }
 
 .suggestion p {
   font-size: 1rem;
+  padding-top: 1.2rem;
 }
 
 .suggestion button {
