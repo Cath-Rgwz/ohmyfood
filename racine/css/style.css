@@ -615,12 +615,53 @@ margin-right: 0;
 }
 } 
 
-/* VERSION DESKTOP */
+/* VERSION DESKTOP - Page de garde - présentation des restaurants */
+
+@media (min-width:1024px) {
+
+
+.fonctionnement ol {
+  flex-wrap: nowrap;
+  font-size: 1rem;
+}
+
+.fonctionnement li {
+  font-size: .8rem;
+  padding-right: .5rem;
+  
+}
+
+.restaurant {
+  padding: 1rem 2.5rem 2.5rem;
+}
+
+  .restaurant .restaurant__carte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+      }
+
+.mini-carte {
+  flex-grow: 1;
+  min-width: 20rem;
+}
+
+
+  .grand-titre {
+    margin-top: 1rem;
+  }
+  
+}
+
+
+
+/* VERSION DESKTOP - Page individuelle par restaurant */
 
 @media (min-width: 1024px) {
   .menus {
     display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat (3, 1fr);
    gap: 2rem;
   }
   .boite-2,
