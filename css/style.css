@@ -13,7 +13,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
 .loader {
   position: fixed;
   display: grid;
@@ -37,12 +36,12 @@ body {
 }
 
 .loader::after {
-content: "";
-height: 60px;
-width: 60px;
-border-radius: 50%;
-border: 6px inset rgba(205, 29, 221, 0.313);
-animation: spin 2s infinite linear;
+  content: "";
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 6px inset rgba(205, 29, 221, 0.313);
+  animation: spin 2s infinite linear;
 }
 
 @keyframes spin {
@@ -54,7 +53,6 @@ animation: spin 2s infinite linear;
 /* part 1 - TITRE */
 header {
   font-family: "Shrikhand", sans-serif;
-  
   box-shadow: 4px 2px 20px 3px rgba(0, 0, 0, 0.2);
   padding: 0.3rem;
   display: flex;
@@ -74,11 +72,10 @@ header {
   background-color: #f3f3f3;
   text-align: center;
   padding: 1rem 0 2rem 0;
-  
 }
+
 .localisation h2,
-.localisation i
-{
+.localisation i {
   font-size: 0.9rem;
   font-weight: 590;
   letter-spacing: -0.02rem;
@@ -128,7 +125,6 @@ header {
   flex-direction: column;
   padding: 0 2rem;
   width: 95%;
-  /* margin: auto; */
 }
 
 .fonctionnement ol {
@@ -267,7 +263,7 @@ a {
 .carte__image-3 {
   height: 10rem;
   width: auto;
-  background-image: url(../images/à-la-française.jpg);
+  background-image: url(../images/française.jpg);
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
 }
@@ -342,7 +338,7 @@ footer h2 {
   padding-bottom: 2rem;
 }
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* PAGE 1 - PALETTE DU GOUT */
 
@@ -368,7 +364,6 @@ header i {
 
 .logo-titre {
   font-family: "Shrikhand", sans-serif;
-  
 }
 
 .bannière img {
@@ -385,8 +380,8 @@ header i {
   max-width: 1280px;
   margin: auto;
   background-color: #f5f5ef;
-  
 }
+
 .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
@@ -396,13 +391,12 @@ header i {
 .carte-descript {
   padding: 0.3rem 2rem 0 1rem;
   position: relative;
-  
 }
 
 .menu__title {
   font-family: "Shrikhand", sans-serif;
   margin: 1.5rem auto;
-  }
+}
 
 .carte-descript i  {
   position: absolute;
@@ -439,7 +433,6 @@ header i {
   display: flex;
   flex-direction: column;
   gap: 2rem; 
-  
 }
 
 .menus__liste {
@@ -481,7 +474,6 @@ margin-bottom: 1rem;
 margin-right: 0;
 }
 
-
 .menu-item__prix {
   margin-left: auto;
   font-weight: bold;
@@ -489,7 +481,6 @@ margin-right: 0;
   align-items: flex-end;
   margin-right: 1rem;
   margin-bottom: 0.3rem;
-  
 }
 
 .menu-item__description {
@@ -511,10 +502,7 @@ margin-right: 0;
 
 .menu-item__description p {
   margin-bottom: .7rem;
-  
-
 }
-
 
 .menu-item__validation {
   background-color: #99e2d0;
@@ -587,7 +575,6 @@ margin-right: 0;
 }
 
 .boite-3 {
-  
   margin-top: 3rem;
   animation-name: fade-menu;
   animation-duration: 4s;
@@ -598,11 +585,10 @@ margin-right: 0;
 
 @keyframes fade-menu {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
-
   10% {
-  margin-top: 5%;
+    margin-top: 5%;
 }
 
 100% {
@@ -613,51 +599,44 @@ margin-right: 0;
 /* VERSION DESKTOP - Page de garde - présentation des restaurants */
 
 @media (min-width:1024px) {
+  .fonctionnement ol {
+    flex-wrap: nowrap;
+    font-size: 1rem;
+  }
 
+  .fonctionnement li {
+    font-size: .8rem;
+    padding-right: .5rem;
+  }
 
-.fonctionnement ol {
-  flex-wrap: nowrap;
-  font-size: 1rem;
-}
-
-.fonctionnement li {
-  font-size: .8rem;
-  padding-right: .5rem;
-  
-}
-
-.restaurant {
-  padding: 1rem 2.5rem 2.5rem;
-}
+  .restaurant {
+    padding: 1rem 2.5rem 2.5rem;
+  }
 
   .restaurant .restaurant__carte {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
-      }
+    }
 
-.mini-carte {
-  flex-grow: 1;
-  min-width: 20rem;
-}
-
+  .mini-carte {
+    flex-grow: 1;
+    min-width: 20rem;
+  }
 
   .grand-titre {
     margin-top: 1rem;
   }
-  
 }
-
-
 
 /* VERSION DESKTOP - Page individuelle par restaurant */
 
 @media (min-width: 1024px) {
   .menus {
     display: grid;
-   grid-template-columns: repeat (3, 1fr);
-   gap: 2rem;
+    grid-template-columns: repeat (3, 1fr);
+    gap: 2rem;
   }
   .boite-2,
   .boite-3 {
@@ -665,10 +644,10 @@ margin-right: 0;
     padding-top: 0;
   }
   p, span {
-  font-size: .8rem;
-}
-h4 {
-  font-size: .9rem;
+    font-size: .8rem;
+  }
+  h4 {
+    font-size: .9rem;
 }
 
 }
