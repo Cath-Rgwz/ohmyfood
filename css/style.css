@@ -120,17 +120,11 @@ header {
 
 /* part 4 - FONCTIONNEMENT */
 
-.fontionnement {
+.fonctionnement {
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
-  width: 95%;
-}
-
-.fonctionnement ol {
-  width: 90%;
-  margin: auto;
-  padding-left: 1rem;
+  width: 100%;
 }
 
 .fonctionnement h2 {
@@ -142,10 +136,13 @@ header {
 
 .fonctionnement ol {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1.5rem;
   list-style-type: none;
   counter-reset: section;
+  width: 95%;
+  margin: auto;
+  padding-left: 1rem;
 }
 
 .fonctionnement li {
@@ -177,11 +174,17 @@ li::before {
 }
 
 .fonctionnement li:hover {
-  background-color: #4e139832
+  background-color: #4e139832;
+  
 }
 
 .fonctionnement li i {
   margin-right: 1rem;
+  
+}
+
+.fonctionnement li i:hover {
+  color: #9356dc;
 }
 
 
@@ -597,10 +600,11 @@ margin-right: 0;
 }
 } 
 
-/* VERSION DESKTOP - Page de garde - présentation des restaurants */
+/* VERSION DESKTOP  */
 
 @media (min-width:1024px) {
   .fonctionnement ol {
+    flex-direction: row;
     flex-wrap: nowrap;
     font-size: 1rem;
   }
@@ -629,11 +633,7 @@ margin-right: 0;
   .grand-titre {
     margin-top: 1rem;
   }
-}
 
-/* VERSION DESKTOP - Page DE GARDE */
-
-@media (min-width: 1024px) {
   .menus {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
