@@ -41,7 +41,7 @@ body {
   width: 60px;
   border-radius: 50%;
   border: 6px inset rgba(205, 29, 221, 0.313);
-  animation: spin 2s infinite linear;
+  animation: spin 3s infinite linear;
 }
 
 @keyframes spin {
@@ -247,6 +247,7 @@ a {
 
 .carte__image-1 {
   height: 10rem;
+  width: auto;
   background-image: url(../images/palette-du-goût.jpg);
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
@@ -300,7 +301,7 @@ a {
 
 .carte__description .fa-solid:active, .carte__description .fa-solid:hover {
   opacity: 1;
-  transform: translateY(-50%), scale(1.3);
+  transform: translateY(-10%) scale(1.3);
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -416,7 +417,7 @@ header i {
 
 .carte-descript .fa-solid:active {
   opacity: 1;
-  transform: translateY(-50%), scale(1.2);
+  transform: translateY(-10%) scale(1.3);
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -520,8 +521,8 @@ margin-right: 0;
 .menu-item__validation i {
   color: white;
   animation-name: circle-check;
-  animation-delay: 1s;
-  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-duration: 3s;
   font-size: 1.5rem;
 }
 
@@ -622,7 +623,7 @@ margin-right: 0;
 
   .mini-carte {
     flex-grow: 1;
-    min-width: 20rem;
+    width: 45%;
   }
 
   .grand-titre {
@@ -630,12 +631,12 @@ margin-right: 0;
   }
 }
 
-/* VERSION DESKTOP - Page individuelle par restaurant */
+/* VERSION DESKTOP - Page DE GARDE */
 
 @media (min-width: 1024px) {
   .menus {
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
   .boite-2,
@@ -648,6 +649,5 @@ margin-right: 0;
   }
   h4 {
     font-size: .9rem;
-}
-
-}
+  }
+  }
