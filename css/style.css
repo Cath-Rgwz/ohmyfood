@@ -175,12 +175,10 @@ li::before {
 
 .fonctionnement li:hover {
   background-color: #4e139832;
-  
 }
 
 .fonctionnement li i {
   margin-right: 1rem;
-  
 }
 
 .fonctionnement li i:hover {
@@ -230,7 +228,7 @@ a {
   flex-grow: 1;
 }
 
-.nouveau {
+.mini-carte {
   position: relative;
 }
 
